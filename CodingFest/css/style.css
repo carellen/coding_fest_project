@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+	color: white;
+	
+}
+h1{
+	font-family: 'Ubuntu';
+}
+p{
+	font-family: 'Open Sans';
+}
+.container {
+    position: relative;
+}
+
+/* HEDAER */
+.header {
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;  
+    background: white;  
+    border-bottom:15px solid #00bbb7;
+}
+
+.header__inner {
+    color: #fff;
+    position: relative;
+}
+
+
+.logo { 
+	width:95%;
+    margin:0px auto;
+    height:100%;
+	z-index:10;
+	padding:20px 10px;
+}
+.logo img{
+	width:100%;
+	max-width: 100px;
+}
+.menu {
+	padding-top:4%;
+    position: relative;
+    text-align: center;
+   
+}
+
+.menu__root li {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu__root li:last-child {
+    margin-right: 0; 
+}
+
+.menu__root a {
+   	color: black;
+    display: inline-block;
+    font-size: 20px;
+    padding: 12px 8px;
+}
+
+.menu__root a:hover {
+    background: ;
+    color: rgba(0,187,183,0.7);
+    text-decoration: none;
+    background-position: center;
+	background-size: 100% 100%;
+}
+
+.menu__root a.active {
+    background: ;
+    color: #00bbb7;
+     background-position: center;
+	 background-size: 100% 100%;
+}
+
+
+.menu__mobile-btn {
+	color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    padding: 20px 16px;
+}
+
+.main {
+    
+}
+.pic_book {
+    height: 70%;
+    width: 70%;  
+}
+
+.resourse {
+    margin: 30px 0 0 0;
+}
+/* MAIN PIC */
+.main-pic{
+	height:100vh;
+	background:url('../img/main.jpg') no-repeat center;
+	width:100%;
+	background-size: cover;
+	margin-top:100px;
+	padding:30% 0;
+}
+.slogan{
+	background:rgba(0,187,183,0.7);
+	border-radius: 30px;
+	color:white;
+	font-size: 30px;
+	text-align: center;
+	padding:30px 40px;
+	width:70%;
+	margin:0px auto;
+}
+.about{
+	padding:50px 30px;
+	border-top:15px solid #00bbb7;
+	border-bottom:15px solid #00bbb7;
+}
+.about h1{
+	color:#00bbb7;
+}
+.about h4{
+	color:red;
+}
+.about-text p{
+
+}
+
+.danger{
+	text-align: center;
+	padding:50px 0;
+	background:url('../img/danger.jpg') no-repeat center;
+	width:100%;
+	background-size: cover;
+	background-attachment: fixed;
+
+	border-bottom:15px solid #00bbb7;
+}
+.danger button{
+	background:rgba(0,187,183,0.7);
+	font-size:30px;
+	letter-spacing: 3px;
+	border:3px solid white;
+}
+.danger button:hover{
+	background: rgba(255,255,255,0.7);
+	color:#00bbb7;
+	border:3px solid #00bbb7;
+}
+.inner-danger{
+	margin-top:20px;
+	padding:30px 30px;
+	border-radius: 30px;
+	background: white;
+}
+.news{
+	padding:50px 30px;
+	text-align: center;
+}
+.carousel h3{
+	color:black;
+}
+.carousel p{
+	color:black;
+}
+.video{
+	padding:50px 30px;
+	text-align: center;
+}
+.inner-video{
+	padding:15px;
+	background:blue;
+	border-radius: 30px;
+}
+
+.feed{
+	padding:50px 30px;
+	text-align: center;
+	background:rgba(0,187,183,0.7);
+}
+.shield{
+	margin-top:50px;
+}
+.shield span{
+	font-size:30px;
+	color:red;
+}
+.shield img{
+	width:100%;
+}
+.resourse{
+	padding:50px 30px;
+}
+.footer{
+	width:100%;
+	padding:50px 30px;
+	background:rgba(0,187,183,0.7);
+	text-align:center;
+}
+.footer-logo{
+
+}
+.footer-logo img{
+	max-width: 200px;
+}
+.footer-phone{
+
+}
+.footer-phone p{
+	font-size: 30px;
+	margin-top:30px;
+	color:white;
+}
+.footer-menu{
+
+}
+.footer-menu ul{
+	text-align: left;
+	padding-left:50px;
+
+}
+.footer-menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color:white;
+	text-align: left;
+}
+.footer-menu a:hover{
+	text-decoration: none;
+}
+@media screen and (min-width: 1200px){
+    .menu__root {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .menu__mobile-btn {
+        display: inline-block;
+    }
+
+    .menu__root {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 6px;
+        display: none;
+        margin-top: 15px;
+        min-width: 300px;
+        padding: 30px 15px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 5;
+    }
+
+    .menu__root li {
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width: 991px){   
+
+}
+@media (min-width: 768px) and (max-width: 979px){
+
+
+}
+@media screen and (max-width: 767px){
+    .menu {
+        text-align: center;
+    }
+    
+    .menu__root {
+        left: 50%;
+        margin-left: -150px;
+        right: auto;
+    }
+	 .logo {
+        display: block;
+    }
+ 
+}
+
+
+@media screen and (max-height: 800px){
+   
+ 
+}
